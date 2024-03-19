@@ -1,0 +1,85 @@
+.nav_wapper {
+   height: 25px;
+   padding: 0.5rem;
+   position: sticky;
+   top: 0;
+   z-index: 30;
+   backdrop-filter: blur(50px);
+
+   align-items: center;
+
+}
+
+
+
+.nav_content {
+   display: flex;
+   max-width: 1300px;
+   align-items: center;
+   justify-content: center;
+   padding: 0.1px;
+   margin: 0 auto;
+
+   align-items: center;
+}
+
+.nav_content ul {
+   display: flex;
+   list-style-type: none; /* Remove default bullet points */
+   padding: 0;
+   margin: 0;
+   gap: 100px;
+   
+}
+
+.nav_content li {
+   margin-right: 1rem; /* Adjust spacing between navigation items */
+}
+
+.nav_content li:last-child {
+   margin-right: 0; /* Remove margin for the last navigation item */
+}
+
+.nav_content li a {
+   text-decoration: none;
+   color: white; /* Change the color of navigation links */
+}
+
+.items{
+   text-decoration: none;
+   font-size: 0.9rem;
+   font-weight: 500;
+   color: #fff;
+   position: relative;
+   cursor: pointer;
+}
+.items::before{
+   content: " ";
+   width: 2rem;
+   height:0.2rem;
+   background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+   border-radius: 0.5rem;
+   position: absolute;
+   bottom: -0.6rem;
+   opacity: 0;
+   transform: translateX(-1.5rem);
+   transition: all 0.3s ease;
+
+}
+.items:hover::before{
+   width: 100%;
+   transform: translateX(0);
+   opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
